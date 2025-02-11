@@ -16,7 +16,7 @@ const NewUser = () => {
           <span className="text-gray-400">ford service</span>
         </div>
       </div>
-      <button className="flex gap-2 items-center bg-black hover:bg-white text-base text-white font-bold py-2 px-6 rounded-3xl capitalize hover:bg-white hover:text-black hover:outline-2 hover:outline-black">
+      <button className="flex gap-2 items-center bg-black hover:bg-white text-base text-white font-bold py-2 px-6 rounded-3xl capitalize hover:bg-white git  hover:text-black hover:outline-2 hover:outline-black">
         <FaPlus />
         new
       </button>
