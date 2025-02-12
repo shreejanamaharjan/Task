@@ -7,3 +7,9 @@ export interface IClaimDetailsProps {
   assignedTo?: boolean;
   onSelect?: (image: string, description: string) => void;
 }
+export interface ISubletProps {
+  sublet?: string;
+  quantity?: number;
+  costPer?: number;
+  requested?: number;
+}
