@@ -1,5 +1,6 @@
 import Action from "./Action";
 import AdditonalNavbar from "./AdditonalNavbar";
+import Services from "./Services";
 import Sublets from "./Sublets";
 
 const AdditionalDetail = () => {
@@ -8,6 +9,7 @@ const AdditionalDetail = () => {
       <AdditonalNavbar />
       <Action />
       <Sublets />
+      <Services />
     </div>
   );
 };
