@@ -2,6 +2,7 @@ import Action from "./Action";
 import AdditonalNavbar from "./AdditonalNavbar";
 import Services from "./Services";
 import Sublets from "./Sublets";
+import Totals from "./Totals";
 
 const AdditionalDetail = () => {
   return (
@@ -10,6 +11,7 @@ const AdditionalDetail = () => {
       <Action />
       <Sublets />
       <Services />
+      <Totals />
     </div>
   );
 };

@@ -6,7 +6,7 @@ const AdditionalNavbar = () => {
     { key: "action", label: "actions" },
     { key: "sublet", label: "sublets" },
     { key: "service", label: "services" },
-    { key: "tool", label: "tools" },
+    { key: "totals", label: "totals" },
     { key: "others-detail", label: "others" },
   ];
   return (

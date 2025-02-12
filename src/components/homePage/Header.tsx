@@ -3,7 +3,7 @@ import NewUser from "./NewUser";
 
 const Header = () => {
   return (
-    <div className="flex justify-between px-5 pt-2 sticky top-0 bg-white">
+    <div className="flex justify-between px-5 pt-2 sticky top-0 bg-white z-1">
       <div className="flex gap-20 items-center">
         <div className="w-20 h-20 bg-red">
           <img
