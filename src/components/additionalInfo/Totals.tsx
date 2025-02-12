@@ -4,7 +4,7 @@ const Totals = () => {
       <div className="text-base flex gap-2 items-center">
         <h1 className="text-gray-900 capitalize font-bold">totals</h1>
       </div>
-      <div className="border-t-2 border-l-2 border-r-2 border-gray-400 rounded-xl overflow-hidden mt-4">
+      <div className="border-2 border-gray-400 rounded-xl overflow-hidden mt-4">
         <table className="w-full table-fixed">
           <thead className="uppercase text-sm text-gray-400 text-left h-10">
             <tr>

@@ -1,5 +1,6 @@
 import Action from "./Action";
 import AdditonalNavbar from "./AdditonalNavbar";
+import Customer from "./Customer";
 import OtherDetails from "./OtherDetails";
 import Services from "./Services";
 import Sublets from "./Sublets";
@@ -14,6 +15,7 @@ const AdditionalDetail = () => {
       <Services />
       <Totals />
       <OtherDetails />
+      <Customer />
     </div>
   );
 };
