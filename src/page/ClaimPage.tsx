@@ -1,9 +1,10 @@
 import { GrNotes } from "react-icons/gr";
 import { FaAngleRight } from "react-icons/fa6";
-import ClaimsDetails from "./ClaimsDetails";
-import PaymentStatus from "./PaymentStatus";
+import ClaimsDetails from "../components/claims/ClaimsDetails";
+import PaymentStatus from "../components/claims/PaymentStatus";
+import AdditionalDetail from "../components/additionalInfo/AdditionalDetail";
 
-const Claims = () => {
+const ClaimPage = () => {
   const user = true;
   return (
     <div className="px-45 py-5">
@@ -23,8 +24,9 @@ const Claims = () => {
         <ClaimsDetails title="current amt." description="109,000 rni" />
       </div>
       <PaymentStatus />
+      <AdditionalDetail />
     </div>
   );
 };
 
-export default Claims;
+export default ClaimPage;

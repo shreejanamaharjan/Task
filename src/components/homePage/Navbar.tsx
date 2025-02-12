@@ -14,7 +14,7 @@ const Navbar = () => {
           key={to}
           to={to}
           className={({ isActive }) =>
-            isActive ? "text-gray-900" : "text-gray-400"
+            isActive ? "text-gray-900 font-semibold" : "text-gray-400"
           }
         >
           <span className="hover:text-gray-900">{label}</span>
