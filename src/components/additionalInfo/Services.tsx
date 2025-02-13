@@ -77,29 +77,33 @@ const Services = () => {
               <h1 className="uppercase text-xs text-gray-900 font-semibold ml-2">
                 parts
               </h1>
-              <div className="bg-white p-4 rounded-xl mt-2">
+              <div className="bg-white rounded-xl mt-2">
                 <table className="w-full table-fixed">
-                  <thead className="uppercase text-sm text-gray-400 text-left h-10">
+                  <thead className="uppercase text-sm text-gray-400 text-left h-10 ">
                     <tr>
-                      <th style={{ width: "20%" }}>parts number</th>
-                      <th style={{ width: "20%" }}>parts name</th>
-                      <th>qty</th>
-                      <th>wty mo</th>
-                      <th>wty miles</th>
-                      <th>cost per</th>
-                      <th>tax per</th>
+                      <th style={{ width: "20%" }} className="p-4">
+                        parts number
+                      </th>
+                      <th style={{ width: "20%" }} className="p-4">
+                        parts name
+                      </th>
+                      <th className="p-4">qty</th>
+                      <th className="p-4">wty mo</th>
+                      <th className="p-4">wty miles</th>
+                      <th className="p-4">cost per</th>
+                      <th className="p-4">tax per</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="border-b border-gray-400 w-full"></tr>
                     <tr className="capitalize font-semibold text-sm text-gray-900 h-10">
-                      <td>123456789AA</td>
-                      <td>radiator</td>
-                      <td>1</td>
-                      <td>24</td>
-                      <td>50,000</td>
-                      <td>$500.00</td>
-                      <td>$75.00</td>
+                      <td className="p-4">123456789AA</td>
+                      <td className="p-4">radiator</td>
+                      <td className="p-4">1</td>
+                      <td className="p-4">24</td>
+                      <td className="p-4">50,000</td>
+                      <td className="p-4">$500.00</td>
+                      <td className="p-4">$75.00</td>
                     </tr>
                   </tbody>
                 </table>
@@ -110,29 +114,31 @@ const Services = () => {
               <h1 className="uppercase text-xs text-gray-900 font-semibold ml-2">
                 labour
               </h1>
-              <div className="bg-white p-4 rounded-xl mt-2">
+              <div className="bg-white rounded-xl mt-2">
                 <table className="w-full table-fixed">
                   <thead className="uppercase text-sm text-gray-400 text-left h-10">
                     <tr>
-                      <th style={{ width: "65%" }}>labour description</th>
-                      <th>menu</th>
-                      <th>hour</th>
-                      <th>rate</th>
-                      <th>tax(%)</th>
-                      <th>tax per</th>
+                      <th className="p-4" style={{ width: "65%" }}>
+                        labour description
+                      </th>
+                      <th className="p-4">menu</th>
+                      <th className="p-4">hour</th>
+                      <th className="p-4">rate</th>
+                      <th className="p-4">tax(%)</th>
+                      <th className="p-4">tax per</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="border-b border-gray-400 w-full"></tr>
                     <tr className="capitalize font-semibold text-sm text-gray-900 h-10">
-                      <td>senior engineer's labour</td>
-                      <td>
+                      <td className="p-4">senior engineer's labour</td>
+                      <td className="p-4">
                         <TiTick />
                       </td>
-                      <td>4</td>
-                      <td>$60.00</td>
-                      <td>15%</td>
-                      <td>$45.00</td>
+                      <td className="p-4">4</td>
+                      <td className="p-4">$60.00</td>
+                      <td className="p-4">15%</td>
+                      <td className="p-4">$45.00</td>
                     </tr>
                   </tbody>
                 </table>
