@@ -10,7 +10,13 @@ const Navbar = () => {
   return (
     <div className="flex gap-5 text-base text-gray-400 capitalize">
       {navLinks.map(({ to, label }) => (
-        <NavLink key={to} to={to}>
+        <NavLink
+          key={to}
+          to={to}
+          className={({ isActive }) =>
+            isActive ? "text-gray-900" : "text-gray-400"
+          }
+        >
           <span className="hover:text-gray-900">{label}</span>
         </NavLink>
       ))}
