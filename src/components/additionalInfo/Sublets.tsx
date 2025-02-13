@@ -3,9 +3,9 @@ import { subletData } from "../../data/sublets";
 const Sublets = () => {
   return (
     <div className="my-4">
-      <div className="text-base flex gap-1 items-center">
+      <div className="text-base flex gap-2 items-center">
         <h1 className="text-gray-900 capitalize font-bold">sublets</h1>
-        <span className="text-gray-400 font-semibold">$250</span>
+        <span className="text-gray-400 font-semibold">$250.00</span>
       </div>
       <div className="my-8 border-t-2 border-l-2 border-r-2 border-gray-400 rounded-xl p-4">
         <table className="w-full table-fixed ">
