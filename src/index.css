@@ -5,3 +5,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
+.stickyNavbar {
+    max-width: 1240px;
+      margin: 0 auto;
+}

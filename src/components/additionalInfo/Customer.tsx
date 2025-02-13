@@ -30,7 +30,7 @@ const Customer = () => {
         </div>
         <div style={{ width: "70%" }} className="flex flex-wrap gap-4">
           {detailData.map((item, index) => (
-            <div key={index} className="w-55">
+            <div key={index} className="w-50">
               <h1 className="text-gray-400 uppercase text-xs font-semibold">
                 {item.label}
               </h1>
