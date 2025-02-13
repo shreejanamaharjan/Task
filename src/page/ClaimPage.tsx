@@ -7,15 +7,15 @@ import AdditionalDetail from "../components/additionalInfo/AdditionalDetail";
 const ClaimPage = () => {
   const user = true;
   return (
-    <div className="px-45 py-5">
-      <div className="flex gap-2 items-center text-gray-400  capitalize text-base">
-        <GrNotes />
+    <div className="px-45 py-5 max-sm:px-20 max-md:px-25">
+      <div className="flex gap-2 items-center text-gray-400  capitalize text-base ">
+        <GrNotes className="text-base" />
         <span>claims</span>
-        <FaAngleRight />
-        <span>action needed</span>
+        <FaAngleRight className="text-sm" />
+        <span className="w-full">action needed</span>
       </div>
       <h1 className="uppercase font-bold text-2xl my-1">c1-7895689</h1>
-      <div className="flex gap-8">
+      <div className="flex gap-8 w-full flex-wrap">
         <ClaimsDetails title="type" description="mechanical" />
         <ClaimsDetails title="ro number" description="784858968545" />
         <ClaimsDetails title="date" description="11th Feb. 2025" />

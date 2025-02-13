@@ -10,11 +10,21 @@ const AdditionalDetail = () => {
   return (
     <div className="mt-4">
       <AdditonalNavbar />
-      <Action />
-      <Sublets />
-      <Services />
-      <Totals />
-      <OtherDetails />
+      <div id="action">
+        <Action />
+      </div>
+      <div id="sublets">
+        <Sublets />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="totals">
+        <Totals />
+      </div>
+      <div id="other-details">
+        <OtherDetails />
+      </div>
       <Customer />
     </div>
   );

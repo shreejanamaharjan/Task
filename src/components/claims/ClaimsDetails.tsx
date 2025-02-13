@@ -46,7 +46,7 @@ const ClaimsDetails: React.FC<IClaimDetailsProps> = ({
           </div>
         )}
 
-        <span className="text-lg text-gray-900 capitalize text-sm font-semibold ">
+        <span className=" text-gray-900 capitalize text-sm font-semibold ">
           {description || descriptions}
         </span>
         {dropdown && (

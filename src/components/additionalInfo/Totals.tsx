@@ -5,7 +5,7 @@ const Totals = () => {
         <h1 className="text-gray-900 capitalize font-bold">totals</h1>
       </div>
       <div className="border-2 border-gray-400 rounded-xl overflow-hidden mt-4">
-        <table className="w-full table-fixed">
+        <table className="min-w-full table-fixed">
           <thead className="uppercase text-sm text-gray-400 text-left h-10">
             <tr>
               <th className="p-4" style={{ width: "90%" }}>
