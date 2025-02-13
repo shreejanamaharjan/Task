@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeLayout from "./layout/HomeLayout";
-import Home from "./components/homePage/Home";
-import Claims from "./components/claims/Claims";
-import Message from "./components/homePage/Message";
+import ClaimPage from "./page/ClaimPage";
+import Homepage from "./page/Homepage";
+import MessagePage from "./page/MessagePage";
 
 function App() {
   return (
@@ -10,9 +10,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<HomeLayout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/claims" element={<Claims />} />
-            <Route path="/messages" element={<Message />} />
+            <Route path="/" element={<Homepage />} />
+            <Route path="/claims" element={<ClaimPage />} />
+            <Route path="/messages" element={<MessagePage />} />
           </Route>
         </Routes>
       </BrowserRouter>

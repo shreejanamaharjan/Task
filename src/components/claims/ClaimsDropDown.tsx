@@ -13,7 +13,7 @@ const ClaimsDropDown: React.FC<{
       {user && (
         <>
           {hasClientData && (
-            <>
+            <div className="absolute bg-white">
               {client.map((item, index) => (
                 <div
                   key={index}
@@ -34,13 +34,13 @@ const ClaimsDropDown: React.FC<{
                   </span>
                 </div>
               ))}
-            </>
+            </div>
           )}
         </>
       )}
 
       {!user && hasAssignedToData && (
-        <>
+        <div className="absolute bg-white">
           {assignedTo.map((item, index) => (
             <div
               key={index}
@@ -61,7 +61,7 @@ const ClaimsDropDown: React.FC<{
               </span>
             </div>
           ))}
-        </>
+        </div>
       )}
     </>
   );
