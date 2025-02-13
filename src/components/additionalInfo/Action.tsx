@@ -25,7 +25,7 @@ const Action = () => {
 
   return (
     <div className="flex justify-between items-center mt-6">
-      <div className="w-85 h-65 border-t-2 border-r-2 border-gray-400 rounded-xl p-4 relative">
+      <div className="w-85 h-65 border-2 border-gray-400 rounded-xl p-4 relative">
         <div className="flex gap-2 items-center">
           <div className="w-8 h-8 rounded-full overflow-hidden">
             <img
@@ -48,7 +48,7 @@ const Action = () => {
           <VscSend />
         </div>
       </div>
-      <div className="w-85 h-65  border-t-2 border-l-2 border-gray-400 rounded-xl p-4">
+      <div className="w-85 h-65  border-2 border-gray-400 rounded-xl p-4">
         <div className="flex gap-2 items-center">
           <FaNoteSticky />
           <h1 className="text-sm font-semibold uppercase">notes</h1>

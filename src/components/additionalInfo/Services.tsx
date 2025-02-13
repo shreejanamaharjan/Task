@@ -20,7 +20,7 @@ const Services = () => {
         <h1 className="text-gray-900 capitalize font-bold">services</h1>
         <span className="text-gray-400 font-semibold">$1400.00</span>
       </div>
-      <div className="rounded-xl bg-gray-200 p-4 my-4">
+      <div className="rounded-xl bg-gray-200 p-4 my-4 border-2 border-gray-400">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
             <div

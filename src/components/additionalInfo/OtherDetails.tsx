@@ -14,7 +14,7 @@ const OtherDetails = () => {
         {detailData.map((item, index) => (
           <div
             key={index}
-            className="border border-gray-400 w-65 rounded-xl p-3"
+            className="border-2 border-gray-400 w-65 rounded-xl p-3"
           >
             <h1 className="text-gray-400 uppercase text-xs font-semibold">
               {item.label}

@@ -3,7 +3,7 @@ import { statusDetails } from "../../data/status";
 
 const PaymentStatus = () => {
   return (
-    <div className="my-8 border-t-2 border-b-2 border-gray-400 rounded-lg">
+    <div className="my-8 border-2 border-gray-400 rounded-lg">
       <table className="w-full table-fixed">
         <thead className="uppercase text-sm text-gray-400 text-left">
           <tr>
