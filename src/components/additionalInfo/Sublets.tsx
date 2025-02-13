@@ -7,22 +7,14 @@ const Sublets = () => {
         <h1 className="text-gray-900 capitalize font-bold">sublets</h1>
         <span className="text-gray-400 font-semibold">$250.00</span>
       </div>
-      <div className="my-4 border-2 border-gray-400 rounded-xl ">
-        <table className="w-full table-fixed ">
-          <thead className="uppercase text-sm text-gray-400 text-left h-10">
+      <div className="my-4 border-2 border-gray-400 rounded-xl overflow-x-auto">
+        <table className="min-w-full">
+          <thead className="uppercase text-sm text-gray-400 text-left h-10 max-md:text-xs">
             <tr>
-              <th className="p-4" style={{ width: "50%" }}>
-                name of the sublets
-              </th>
-              <th className="p-4" style={{ width: "10%" }}>
-                qty
-              </th>
-              <th className="p-4" style={{ width: "30%" }}>
-                cost per
-              </th>
-              <th className="p-4" style={{ width: "10%" }}>
-                requested
-              </th>
+              <th className="p-4">Name of the sublets</th>
+              <th className="p-4">Qty</th>
+              <th className="p-4">Cost Per</th>
+              <th className="p-4">Requested</th>
             </tr>
           </thead>
           <tbody className="font-semibold text-gray-900">

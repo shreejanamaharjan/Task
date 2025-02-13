@@ -71,11 +71,11 @@ const AdditionalNavbar = () => {
         ref={navbarRef}
         className={`bg-white transition-all duration-300 z-10 ${
           isSticky
-            ? "fixed top-0 w-full pt-4 flex justify-between pr-4 items-center stickyNavbar"
+            ? "fixed top-0 w-full pt-4 flex gap-80 pr-4 items-center max-[1270px]:gap-40 max-[1110px]:gap-10"
             : ""
         }`}
       >
-        <div className="flex gap-5 text-base text-gray-400 capitalize w-full p-4">
+        <div className="flex gap-5 text-base text-gray-400 capitalize  p-4 max-sm:gap-1 max-sm:text-xs">
           {navLinks.map(({ key, label }) => (
             <button
               key={key}
@@ -98,7 +98,7 @@ const AdditionalNavbar = () => {
         {isSticky && (
           <button
             onClick={toggleOverlay}
-            className="bg-black  w-60 text-base text-white font-bold py-2 px-6 rounded-3xl capitalize hover:bg-white hover:text-black hover:outline-2 hover:outline-black"
+            className="bg-black  w-60 text-base text-white font-bold py-2 px-6 rounded-3xl capitalize hover:bg-white hover:text-black hover:outline-2 hover:outline-black max-[1000px]:hidden"
           >
             Submit for payment
           </button>

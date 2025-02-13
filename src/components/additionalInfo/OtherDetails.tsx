@@ -10,11 +10,11 @@ const OtherDetails = () => {
       <div className="text-base flex gap-2 items-center">
         <h1 className="text-gray-900 capitalize font-bold">other details</h1>
       </div>
-      <div className="flex items-center justify-between mt-4">
+      <div className="flex items-center justify-between mt-4 max-[980px]:block">
         {detailData.map((item, index) => (
           <div
             key={index}
-            className="border-2 border-gray-400 w-65 rounded-xl p-3"
+            className="border-2 border-gray-400 w-[24%] rounded-xl p-3 max-[980px]:w-full  max-[980px]:mb-8"
           >
             <h1 className="text-gray-400 uppercase text-xs font-semibold">
               {item.label}

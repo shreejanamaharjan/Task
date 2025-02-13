@@ -36,7 +36,7 @@ const Services = () => {
           </div>
           <div className="text-sm font-semibold text-gray-400 capitalize">
             <h1
-              className={`${
+              className={`max-sm:hidden ${
                 showMenu
                   ? "border-none"
                   : "border-b-2 border-gray-400 border-dashed"
@@ -77,8 +77,8 @@ const Services = () => {
               <h1 className="uppercase text-xs text-gray-900 font-semibold ml-2">
                 parts
               </h1>
-              <div className="bg-white rounded-xl mt-2">
-                <table className="w-full table-fixed">
+              <div className="bg-white rounded-xl mt-2 overflow-x-scroll">
+                <table className="w-275 table-fixed ">
                   <thead className="uppercase text-sm text-gray-400 text-left h-10 ">
                     <tr>
                       <th style={{ width: "20%" }} className="p-4">
@@ -114,8 +114,8 @@ const Services = () => {
               <h1 className="uppercase text-xs text-gray-900 font-semibold ml-2">
                 labour
               </h1>
-              <div className="bg-white rounded-xl mt-2">
-                <table className="w-full table-fixed">
+              <div className="bg-white rounded-xl mt-2 overflow-x-scroll">
+                <table className="w-275 table-fixed">
                   <thead className="uppercase text-sm text-gray-400 text-left h-10">
                     <tr>
                       <th className="p-4" style={{ width: "65%" }}>

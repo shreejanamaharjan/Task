@@ -12,9 +12,9 @@ const Customer = () => {
       <div className="text-base flex gap-2 items-center">
         <h1 className="text-gray-900 capitalize font-bold">customer</h1>
       </div>
-      <div className="flex items-center justify-between mt-4 border-2 border-gray-400 p-4 rounded-xl">
-        <div style={{ width: "20%" }}>
-          <div className="w-12 h-12 rounded-full overflow-hidden">
+      <div className="flex items-center justify-between mt-4 border-2 border-gray-400 p-4 rounded-xl max-[1000px]:block ">
+        <div style={{ width: "20%" }} className="max-[1000px]:mb-4">
+          <div className="w-12 h-12 rounded-full overflow-hidden ">
             <img
               src="/images/claims/user.jpg"
               alt="customer profile"

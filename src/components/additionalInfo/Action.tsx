@@ -24,8 +24,8 @@ const Action = () => {
   };
 
   return (
-    <div className="flex justify-between items-center mt-6">
-      <div className="w-85 h-65 border-2 border-gray-400 rounded-xl p-4 relative">
+    <div className="flex justify-between items-center mt-6 max-[975px]:block">
+      <div className="w-85 h-65 border-2 border-gray-400 rounded-xl p-4 relative max-[1390px]:w-70 max-[1210px]:w-50 max-[1210px]:text-xs max-[975px]:w-full max-[975px]:mb-4">
         <div className="flex gap-2 items-center">
           <div className="w-8 h-8 rounded-full overflow-hidden">
             <img
@@ -45,10 +45,10 @@ const Action = () => {
         <div className="w-full border-b-1 border-gray-400 absolute bottom-10 left-0"></div>
         <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center text-gray-400 font-semibold">
           <input type="text" placeholder="Type your message..." />
-          <VscSend />
+          <VscSend className="max-[1210px]:text-base" />
         </div>
       </div>
-      <div className="w-85 h-65  border-2 border-gray-400 rounded-xl p-4">
+      <div className="w-85 h-65  border-2 border-gray-400 rounded-xl p-4 max-[1390px]:w-70 max-[1210px]:w-50 max-[1210px]:text-xs max-[975px]:w-full max-[975px]:mb-4">
         <div className="flex gap-2 items-center">
           <FaNoteSticky />
           <h1 className="text-sm font-semibold uppercase">notes</h1>
@@ -60,7 +60,7 @@ const Action = () => {
           ></textarea>
         </div>
       </div>
-      <div className="w-85 h-65 border-dashed border-2 border-gray-400 rounded-xl p-4">
+      <div className="w-85 h-65 border-dashed border-2 border-gray-400 rounded-xl p-4 max-[1390px]:w-70 max-[1210px]:w-50 max-[1210px]:text-xs max-[975px]:w-full max-[975px]:mb-4">
         <div className="flex gap-2 items-center">
           <FaFileSignature />
           <h1 className="text-sm font-semibold uppercase">files</h1>
