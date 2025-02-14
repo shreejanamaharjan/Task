@@ -1,5 +1,11 @@
+import AuthForm from "../components/auth/AuthForm";
+
 const Homepage = () => {
-  return <div>Homepage</div>;
+  return (
+    <div>
+      <AuthForm />
+    </div>
+  );
 };
 
 export default Homepage;
