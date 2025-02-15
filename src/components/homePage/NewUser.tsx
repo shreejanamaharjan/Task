@@ -7,6 +7,7 @@ const NewUser = () => {
   const handleMenu = () => {
     setShowMenu((prev) => !prev);
   };
+
   return (
     <div className="flex gap-10 items-center ">
       <div className="flex gap-1">
