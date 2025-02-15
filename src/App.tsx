@@ -1,8 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeLayout from "./layout/HomeLayout";
 import ClaimPage from "./page/ClaimPage";
-import Homepage from "./page/Homepage";
 import MessagePage from "./page/MessagePage";
+import ProtectedRoute from "./context/ProtectedRoute";
+import Homepage from "./page/HomePage";
+import AuthForm from "./components/auth/AuthForm";
 
 function App() {
   return (
@@ -10,10 +12,13 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<HomeLayout />}>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/claims" element={<ClaimPage />} />
-            <Route path="/messages" element={<MessagePage />} />
+            <Route element={<ProtectedRoute />}>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/claims" element={<ClaimPage />} />
+              <Route path="/messages" element={<MessagePage />} />
+            </Route>
           </Route>
+          <Route path="/auth-form" element={<AuthForm />} />
         </Routes>
       </BrowserRouter>
     </>
