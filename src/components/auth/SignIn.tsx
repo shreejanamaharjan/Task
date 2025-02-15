@@ -45,19 +45,20 @@ const SignInForm = () => {
         password: data.password,
       };
       const response = await axiosInstance.post(`/auth/login`, requestedData);
-      const { accessToken, refreshToken, userData } = response.data;
+      const { accessToken, refreshToken, userId } = response.data;
       dispatch({
         type: "LOGIN_SUCCESS",
         payload: {
-          userId: userData._id,
+          userId: userId,
           accesstoken: accessToken,
           refreshtoken: refreshToken,
         },
       });
+      localStorage.setItem("userId", userId);
       localStorage.setItem("access-token", accessToken);
       localStorage.setItem("refresh-token", refreshToken);
       console.log(response);
-      navigate(`/?userId=${userData._id}`);
+      navigate(`/`);
       toast.success("logged in successfully!");
       reset();
     } catch (error: unknown) {

@@ -55,13 +55,14 @@ export const login = async (req: Request, res: Response): Promise<void> => {
       res.status(400).json({ success: false, message: "invalid credential" });
       return;
     }
+    const userId = userData._id;
     const { accessToken, refreshToken } = await generateToken(userData.id);
     res.status(200).json({
       success: true,
       message: "logged in succesfully",
       accessToken,
       refreshToken,
-      userData,
+      userId,
     });
     return;
   } catch (error: unknown) {

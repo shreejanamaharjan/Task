@@ -8,17 +8,8 @@ interface AuthState {
 }
 
 interface AuthAction {
-  type:
-    | "LOGIN_SUCCESS"
-    | "LOGIN_FAILURE"
-    | "LOGOUT"
-    | "SET_TOKEN"
-    | "CLEAR_TOKEN";
-  payload?: {
-    userId?: string;
-    accesstoken?: string;
-    refreshtoken?: string;
-  };
+  type: string;
+  payload?: any;
 }
 
 // Define context properties
@@ -33,9 +24,9 @@ interface IButtonContextProps {
 
 // Initial Auth State
 const initialAuthState: AuthState = {
-  userId: null,
-  accesstoken: null,
-  refreshtoken: null,
+  userId: localStorage.getItem("userId"),
+  accesstoken: localStorage.getItem("accessToken"),
+  refreshtoken: localStorage.getItem("refreshToken"),
 };
 
 // Create Context
@@ -53,12 +44,11 @@ const AuthReducer = (state: AuthState, action: AuthAction): AuthState => {
   switch (action.type) {
     case "LOGIN_SUCCESS":
       return {
-        userId: action.payload?.userId || null,
-        accesstoken: action.payload?.accesstoken || null,
-        refreshtoken: action.payload?.refreshtoken || null,
+        userId: action.payload.userId,
+        accesstoken: action.payload.accesstoken,
+        refreshtoken: action.payload.refreshtoken,
       };
 
-    case "LOGIN_FAILURE":
     case "LOGOUT":
       return {
         userId: null,
