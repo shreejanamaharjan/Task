@@ -61,6 +61,7 @@ export const login = async (req: Request, res: Response): Promise<void> => {
       message: "logged in succesfully",
       accessToken,
       refreshToken,
+      userData,
     });
     return;
   } catch (error: unknown) {
